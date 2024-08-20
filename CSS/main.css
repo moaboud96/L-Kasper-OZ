@@ -66,7 +66,10 @@ ul {
 /* start header  */
 
 header {
-
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 header .container { 
@@ -115,11 +118,25 @@ header nav ul {
    display: flex;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     header nav ul {
         display: none;
     }
+    header nav .toggle-menu:hover + ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgb(0, 0, 0 / 50%);
+    }
+    der nav .toggle-menu:hover + ul li a {
+        padding: 15px;
+    } 
 }
+
+
 
 header nav ul li a {
     display: block;
@@ -154,3 +171,7 @@ header nav .form i {
     right: 0;
 }
 /* end header  */
+
+/* start landing  */
+
+/* end landing  */
