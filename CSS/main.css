@@ -406,6 +406,13 @@ header nav .form i {
     bottom: -150px;
 }
 
+@media (max-width: 767px) {
+    .design .image {
+        display: none;
+    }
+}
+
+
 .design .text {
     color: white;
     padding: 50px;
@@ -429,6 +436,17 @@ header nav .form i {
     content: "\f108";
     font-weight: 900;
     margin-right: 20px;
+    top: 1px;
 }
 
 /* end design  */
+
+/* start portfolio  */
+
+.portfolio {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+
+}
+
+/* end portfolio  */
