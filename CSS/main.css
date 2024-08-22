@@ -368,3 +368,13 @@ header nav .form i {
 }
 
 /* end services */
+
+/* srart design  */
+
+.design {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    height: 600px;
+}
+
+/* end design  */
