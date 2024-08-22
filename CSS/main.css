@@ -609,5 +609,72 @@ header nav .form i {
 /* end about  */
 
 /* start statistics */
+.statistics { 
+    padding-top: var(--section-padding); 
+    padding-bottom: var(--section-padding);
+    background-image: url(../Images/stats.png);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
 
+.statistics::before { 
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 70%);
+}
+
+.statistics .container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.statistics .container .box { 
+    color: white;
+    padding: 50px;
+    background-color: var(--transparent-color);
+ }
+
+@media (max-width: 767px) {
+    .statistics .container .box {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .statistics .container .box {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .statistics .container .box {
+        flex-basis: 25%;
+    }
+}
+
+
+.statistics .container .box i { 
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+}
+.statistics .container .box .number { 
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+.statistics .container .box p { 
+    font-size: 14px;
+}
 /* end statistics */
