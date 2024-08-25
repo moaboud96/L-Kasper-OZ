@@ -1083,7 +1083,7 @@ header nav .form i {
     cursor: pointer;
 }
 
-.contact .content  { 
+.contact .content .info  { 
     flex-basis: 25%;
 }
 
