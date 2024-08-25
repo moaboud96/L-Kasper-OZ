@@ -900,8 +900,15 @@ header nav .form i {
 }
 
 .pricing .plans ul { 
-    
+
 }
 
+.pricing .plans ul li { 
+
+}
+
+.pricing .plans ul li:not(:last-child) {
+    
+}
 /* end pricing */
 
