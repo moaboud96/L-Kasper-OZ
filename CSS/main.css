@@ -1033,3 +1033,13 @@ header nav .form i {
 }
 
 /* end suscribe */
+
+/* start contact */
+
+.contact { 
+    padding-top: var(--section-padding); 
+    padding-bottom: var(--section-padding);
+
+}
+
+/* end contact */
