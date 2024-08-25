@@ -900,15 +900,50 @@ header nav .form i {
 }
 
 .pricing .plans ul { 
-
+    border-bottom: 1px solid var(--main-color);
 }
 
 .pricing .plans ul li { 
-
+    padding: 20px;
+    position: relative;
 }
 
-.pricing .plans ul li:not(:last-child) {
-    
+
+.pricing .plans ul li:not(:last-child)::after {
+    content: "";
+    width: 140px;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.pricing .plans .plan .foot a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    width: fit-content;
+    margin: 30px auto;
+    border: 1px solid var(--main-color);
+}
+
+.pricing .contact-text { 
+    text-align: center;
+    margin: 50px auto 20px;
+    font-size: 20px;
+}
+
+.pricing .contact-link { 
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+
 }
 /* end pricing */
 
